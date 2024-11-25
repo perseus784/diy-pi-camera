@@ -1,11 +1,11 @@
 import pygame, os
 import cv2
 from image_processor import process_image
-#os.environ["DISPLAY"] = ":0"
+os.environ["DISPLAY"] = ":0"
 
 pygame.init()
 res = (640,480)
-screen = pygame.display.set_mode(res, pygame.SHOWN) #pygame.FULLSCREEN
+screen = pygame.display.set_mode(res,pygame.FULLSCREEN) #pygame.SHOWN) #pygame.FULLSCREEN
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 if not cap.isOpened():
     print("Cannot open camera")
