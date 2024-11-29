@@ -2,7 +2,8 @@ from datetime import datetime
 from settings import image_path
 import os
 
-def process_image(camera, image):
+def process_image(camera, capture_config):
     image_file_name = os.path.join(image_path, "DSC_"+datetime.today().strftime('%Y-%m-%d-%H-%M-%S')+".jpg")
-    camera.capture_file(image_file_name)
-    return image
+    image = camera.switch_mode_and_capture_image(capture_config, image_file_name)
+
+    return None
