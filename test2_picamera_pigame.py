@@ -4,6 +4,7 @@ from gpiozero import Button
 from image_processor import process_image
 from datetime import datetime
 from settings import shutter_button_pin, resolution_h, resolution_w, prw_res_w, prw_res_h
+import libcamera
 
 shutter = Button(shutter_button_pin)
 
@@ -25,7 +26,9 @@ screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
 camera = Picamera2()
 camera.preview_configuration.main.size = preview_res
-camera.preview_configuration.main.format = 'BGR888'
+camera.preview_configuration.main.format = 'BGR888' 
+preview_config = camera.create_preview_configuration(transform=libcamera.Transform(vflip=True), main={"size": preview_res})
+camera.configure(preview_config)
 camera.configure("preview")
 
 capture_config = camera.create_still_configuration()
