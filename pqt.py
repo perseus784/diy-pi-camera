@@ -6,11 +6,13 @@
 
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QLabel, QPushButton,
-                             QVBoxLayout, QWidget)
+                             QVBoxLayout, QWidget, QMainWindow)
 
 from picamera2 import Picamera2
 from picamera2.previews.qt import QGlPicamera2
+import os
 
+os.environ["DISPLAY"] = ":0"
 
 def post_callback(request):
     label.setText(''.join(f"{k}: {v}\n" for k, v in request.get_metadata().items()))
@@ -45,14 +47,13 @@ label.setFixedWidth(400)
 label.setAlignment(QtCore.Qt.AlignTop)
 layout_h = QHBoxLayout()
 layout_v = QVBoxLayout()
-layout_v.addWidget(label)
-layout_v.addWidget(button)
+#layout_v.addWidget(label)
+#layout_v.addWidget(button)
 layout_h.addWidget(qpicamera2, 80)
-layout_h.addLayout(layout_v, 20)
+#layout_h.addLayout(layout_v, 20)
 window.setWindowTitle("Qt Picamera2 App")
-window.resize(1200, 600)
+#window.resize(1200, 600)
 window.setLayout(layout_h)
-
 picam2.start()
-window.show()
+window.showFullScreen()
 app.exec()
