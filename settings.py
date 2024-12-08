@@ -14,4 +14,4 @@ image_path = os.path.join("images")
 
 shutter_button_pin =  16
 full_res = (1920, 1080)
-preview_res = (800, 600)
+preview_res = (1200, 900)
