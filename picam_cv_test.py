@@ -104,7 +104,7 @@ while True:
         picam2.set_controls(sensor_config)
         SS_DISP_CALC = SS_RANGE[SS_KEY].split('/')[-1] if parse_fraction(SS_RANGE[SS_KEY])<1 else str(parse_fraction(SS_RANGE[SS_KEY]))+'"'
     
-    faces = face_detector.detectMultiScale(grey, 1.1, 5)
+    faces = face_detector.detectMultiScale(grey, 1.05, 6, minSize=(30, 30))
     
     for (x, y, w, h) in faces:
         cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0))
