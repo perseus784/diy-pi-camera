@@ -23,7 +23,7 @@ ss_p, ss_n = Button(SS_pins[0]), Button(SS_pins[1])
 
 os.environ["DISPLAY"] = ":0"
 
-#face_detector = cv2.CascadeClassifier("config_files/haarcascade_frontalface_default.xml")
+face_detector = cv2.CascadeClassifier("config_files/haarcascade_frontalface_default.xml")
 cv2.startWindowThread()
 cv2.namedWindow('picam',  cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("picam", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
@@ -53,8 +53,15 @@ while True:
     im[edges==255] = [0,0,255, 255]
     
     if shutter.is_pressed:
-        save_image(picam2, capture_config)
+        time.sleep(0.0025)
+        image_filename = save_image(picam2, capture_config)
+        image_taken = cv2.imread(image_filename)
+        cv2.putText(image_taken, "Storing image...", (200,200), cv2.FONT_HERSHEY_SIMPLEX, 7, (255,255,255), 4)
+        cv2.imshow("picam", image_taken)
+        cv2.waitKey(3000)
+
     elif iso_p.is_pressed:
+        time.sleep(0.0025)
         print("iso_positive")
         if ISO_KEY == len(ISO_RANGE)-1:
             ISO_KEY = 0
@@ -65,6 +72,7 @@ while True:
         ISO_DISP_CALC = ISO_RANGE[ISO_KEY]*100
 
     elif iso_n.is_pressed:
+        time.sleep(0.0025)
         print("iso_n")
         if ISO_KEY == 0:
             ISO_KEY = len(ISO_RANGE)-1
@@ -75,6 +83,7 @@ while True:
         ISO_DISP_CALC = ISO_RANGE[ISO_KEY]*100
 
     elif ss_p.is_pressed:
+        time.sleep(0.0025)
         print("ss_p")
         if SS_KEY == len(SS_RANGE)-1:
             SS_KEY = 0
@@ -85,6 +94,7 @@ while True:
         SS_DISP_CALC = SS_RANGE[SS_KEY].split('/')[-1] if parse_fraction(SS_RANGE[SS_KEY])<1 else str(parse_fraction(SS_RANGE[SS_KEY]))+'"'
 
     elif ss_n.is_pressed:
+        time.sleep(0.0025)
         print("ss_n")
         if SS_KEY == 0:
             SS_KEY = len(SS_RANGE)-1
@@ -94,10 +104,10 @@ while True:
         picam2.set_controls(sensor_config)
         SS_DISP_CALC = SS_RANGE[SS_KEY].split('/')[-1] if parse_fraction(SS_RANGE[SS_KEY])<1 else str(parse_fraction(SS_RANGE[SS_KEY]))+'"'
     
-    '''faces = face_detector.detectMultiScale(grey, 1.1, 5)
+    faces = face_detector.detectMultiScale(grey, 1.1, 5)
     
     for (x, y, w, h) in faces:
-        cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0))'''
+        cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0))
 
     cv2.putText(im,"SS: {}        ISO: {}".format(str(SS_DISP_CALC), str(ISO_DISP_CALC)), (100,100), 0, 2, 255)
     cv2.imshow("picam", im)
