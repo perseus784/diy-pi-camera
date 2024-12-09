@@ -19,5 +19,6 @@ full_res = (1920, 1080)
 preview_res = (1200, 900)
 
 sensor_defaults = {"ExposureTime": 10000, "AnalogueGain": 1.0}
-ISO_RANGE = [i+1 for i in range(0,15)]
-SS_RANGE = []
+ISO_RANGE = [i+1 for i in range(0,21)]
+SS_RANGE = [ "1/8000", "1/4000", "1/2000", "1/1000", "1/800", "1/400", "1/200", "1/100", "1/50",
+            "1/25", "1/16", "1/8", "1/4", "1/2", "1/1", "2/1", "3/1"]
