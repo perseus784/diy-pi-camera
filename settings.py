@@ -10,11 +10,11 @@ while (os.path.isdir(BASE_DIR)):
         
 print(f"{BASE_DIR} is the root directory")
 
-image_path = os.path.join("images")
+image_path = os.path.join("static", "images")
 
-shutter_button_pin =  26
+shutter_button_pin =  5
 ISO_pins = (13, 19)
-SS_pins = (5, 6)
+SS_pins = (6, 26)
 full_res = (1920, 1080)
 preview_res = (1200, 900)
 
