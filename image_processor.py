@@ -9,3 +9,6 @@ def save_image(camera, capture_config):
     image.save('main', image_file_name)
 
     return image_file_name
+
+def yourcustomfunction():
+    pass
