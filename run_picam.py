@@ -106,6 +106,6 @@ while True:
     for (x, y, w, h) in faces:
         cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0))
 
-    cv2.putText(im,"SS: {}        ISO: {}".format(str(SS_DISP_CALC), str(ISO_DISP_CALC)), (100,100), 0, 3, 255)
+    cv2.putText(im,"SS: {}        ISO: {}".format(str(SS_DISP_CALC), str(ISO_DISP_CALC)), (100,100), 0, 2, 255, 2)
     cv2.imshow("picam", im)
     cv2.waitKey(1)

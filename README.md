@@ -9,13 +9,14 @@ ISO and Shutter Speed can be changed using the dedicated buttons to cycle throug
 
 ### Gallery:
 Gallery interface to view and download the images using an interactive webapp when connected to same WiFi.
+![Gallery](data/images/gallery.png?raw=true "Gallery")
 
 ### Adding CV/ML Features:
 
 Focus Peaking and Face detection using Haar cascade.
+![Focus Peak](data/images/focus_peak.jpg?raw=true "Focus Peak")
 
-add your own module and styling
-
+add your own CV module and styling in the image_processer.py
 
 ## 3D files
 Used Fusion-360 to give a simple design. Here: STL files.
