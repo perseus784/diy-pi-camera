@@ -10,5 +10,5 @@ def save_image(camera, capture_config):
 
     return image_file_name
 
-def yourcustomfunction():
+def yourcustom_cv_function():
     pass

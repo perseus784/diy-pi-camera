@@ -44,6 +44,7 @@ ISO_KEY = 0
 SS_KEY = 0
 SS_DISP_CALC = "auto"
 ISO_DISP_CALC = "auto"
+
 while True:
     im = picam2.capture_array()
     grey = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
@@ -62,7 +63,6 @@ while True:
 
     elif iso_p.is_pressed:
         time.sleep(0.0025)
-        print("iso_positive")
         if ISO_KEY == len(ISO_RANGE)-1:
             ISO_KEY = 0
         else:
@@ -73,7 +73,6 @@ while True:
 
     elif iso_n.is_pressed:
         time.sleep(0.0025)
-        print("iso_n")
         if ISO_KEY == 0:
             ISO_KEY = len(ISO_RANGE)-1
         else:
@@ -84,7 +83,6 @@ while True:
 
     elif ss_p.is_pressed:
         time.sleep(0.0025)
-        print("ss_p")
         if SS_KEY == len(SS_RANGE)-1:
             SS_KEY = 0
         else:
@@ -95,7 +93,6 @@ while True:
 
     elif ss_n.is_pressed:
         time.sleep(0.0025)
-        print("ss_n")
         if SS_KEY == 0:
             SS_KEY = len(SS_RANGE)-1
         else:
@@ -109,6 +106,6 @@ while True:
     for (x, y, w, h) in faces:
         cv2.rectangle(im, (x, y), (x + w, y + h), (0, 255, 0))
 
-    cv2.putText(im,"SS: {}        ISO: {}".format(str(SS_DISP_CALC), str(ISO_DISP_CALC)), (100,100), 0, 2, 255)
+    cv2.putText(im,"SS: {}        ISO: {}".format(str(SS_DISP_CALC), str(ISO_DISP_CALC)), (100,100), 0, 3, 255)
     cv2.imshow("picam", im)
     cv2.waitKey(1)
