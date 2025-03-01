@@ -12,16 +12,16 @@
 
 <table>
     <tr>
-        <td><img src="static/images/DSC_2025-03-01-13-26-09.jpg?raw=true" alt="c1" title="c1" width="350" /></td>
-        <td><img src="static/images/DSC_2025-03-01-13-58-26.jpg?raw=true" alt="c2" title="c2" width="350" /></td>
+        <td><img src="static/images/DSC_2025-03-01-13-26-09.jpg?raw=true" alt="c1" title="c1" width="400" /></td>
+        <td><img src="static/images/DSC_2025-03-01-13-58-26.jpg?raw=true" alt="c2" title="c2" width="400" /></td>
     </tr>
     <tr>
-        <td><img src="static/images/DSC_2025-03-01-14-00-04.jpg?raw=true" alt="c2" title="c2" width="350" /></td>
-        <td><img src="static/images/DSC_2025-02-23-22-12-32.jpg?raw=true" alt="c2" title="c2" width="350" /></td>
+        <td><img src="static/images/DSC_2025-03-01-14-00-04.jpg?raw=true" alt="c2" title="c2" width="400" /></td>
+        <td><img src="static/images/DSC_2025-02-23-22-12-32.jpg?raw=true" alt="c2" title="c2" width="400" /></td>
     </tr>
     <tr>
-        <td><img src="static/images/DSC_2025-03-01-14-02-32.jpg?raw=true" alt="c2" title="c2" width="350" /></td>
-        <td><img src="static/images/DSC_2025-03-01-14-00-25.jpg?raw=true" alt="c2" title="c2" width="350" /></td>
+        <td><img src="static/images/DSC_2025-03-01-14-02-32.jpg?raw=true" alt="c2" title="c2" width="400" /></td>
+        <td><img src="static/images/DSC_2025-03-01-14-00-25.jpg?raw=true" alt="c2" title="c2" width="400" /></td>
     </tr>
 </table>
 
@@ -36,7 +36,7 @@ Shutter Speed : 1/8000 - 3 Secs
 
 ### Gallery:
 Gallery interface to view and download the images using an interactive webapp when connected to same WiFi.
-<img src="data/images/gallery.png?raw=true" alt="gallery" width="600"/>
+<img src="data/images/gallery.png?raw=true" alt="gallery" width="750"/>
 
 
 ### Adding CV/ML Features:
@@ -73,7 +73,7 @@ With little bit of soldering and 3D modelling, we can assemble all parts togethe
 
 Used Fusion-360 to give a simple design. Here: [STL files](https://github.com/perseus784/diy-pi-camera/tree/main/data/3D%20files).
 
-<img src="data/images/3D_slicer.png?raw=true" alt="3D Slicer" width="600"/>
+<img src="data/images/3D_slicer.png?raw=true" alt="3D Slicer" width="750"/>
 
 <table>
     <tr>
