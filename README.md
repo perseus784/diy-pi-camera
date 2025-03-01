@@ -69,7 +69,7 @@ def yourcustom_cv_function(image):
 
 With little bit of soldering and 3D modelling, assembling all parts together.
 
-Used Fusion-360 to give a simple design. Here: [STL files](https://github.com/perseus784/diy-pi-camera/tree/main/data/3D%20files).
+Used Fusion-360 to give a simple design. Here: [STL files](https://github.com/perseus784/diy-pi-camera/tree/main/data/3D%20files) or [here](https://makerworld.com/en/models/1164810-diy-rpi-camera).
 
 <img src="data/images/3D_slicer.png?raw=true" alt="3D Slicer" width="830"/>
 
