@@ -1,11 +1,25 @@
 # DIY PI Camera
-![Camera Front](data/images/camera_front.jpg?raw=true "Camera Front")
-![Camera Back](data/images/camera_back.jpg?raw=true "Camera Back")
-![Fusion 360](data/images/fusion-360.gif?raw=true "Fusion 360")
+
+<table>
+    <tr>
+        <td><img src="data/images/camera_front.jpg?raw=true" alt="Camera Front" title="Camera Front" width="200" /></td>
+        <td><img src="data/images/camera_back.jpg?raw=true" alt="Camera Back" title="Camera Back" width="200" /></td>
+        <td><img src="data/images/fusion-360.gif?raw=true" alt="Fusion 360" title="Fusion 360" width="200" /></td>
+    </tr>
+</table>
 
 ## Sample Images
-![Sample 1](data/images/DSC_2025-03-01-13-26-09.jpg?raw=true "c1")
-![sample 2](data/images/DSC_2025-03-01-13-27-13.jpg?raw=true "c2")
+
+<table>
+    <tr>
+        <td><img src="static/images/DSC_2025-03-01-13-26-09.jpg?raw=true" alt="c1" title="c1" width="200" /></td>
+        <td><img src="static/images/DSC_2025-03-01-13-27-13.jpg?raw=true" alt="c2" title="c2" width="200" /></td>
+    </tr>
+    <tr>
+        <td><img src="static/images/DSC_2025-03-01-14-00-04.jpg?raw=true" alt="c2" title="c2" width="200" /></td>
+        <td><img src="static/images/DSC_2025-03-01-13-58-26.jpg?raw=true" alt="c2" title="c2" width="200" /></td>
+    </tr>
+</table>
 
 ## Features:
 
@@ -51,9 +65,12 @@ Used Fusion-360 to give a simple design. Here: STL files.
 ![3D Slicer](data/images/3D_slicer.png?raw=true "3D slicer")
 
 ### Assembly and Prototyping
-![Assembly1](data/images/assembly1.jpg?raw=true "Assembly1")
-![Assembly2](data/images/assembly2.jpg?raw=true "Assembly2")
-![Prototypes](data/images/prototypes.jpg?raw=true "Prototyping")
-
+<table>
+    <tr>
+        <td><img src="data/images/assembly1.jpg?raw=true" alt="Assembly1" title="Assembly1" width="200" /></td>
+        <td><img src="data/images/assembly2.jpg?raw=true" alt="Assembly2" title="Assembly2" width="200" /></td>
+        <td><img src="data/images/prototypes.jpg?raw=true" alt="Prototyping" title="Prototyping" width="200" /></td>
+    </tr>
+</table>
 
 Please raise a PR for any file/ parts request if I missed anything, I can add it here.
