@@ -36,7 +36,7 @@ Shutter Speed : 1/8000 - 3 Secs
 
 ### Gallery:
 Gallery interface to view and download the images using an interactive webapp when connected to same WiFi.
-<img src="data/images/gallery.png?raw=true" alt="gallery" width="750"/>
+<img src="data/images/gallery.png?raw=true" alt="gallery" width="800"/>
 
 
 ### Adding CV/ML Features:
@@ -69,11 +69,11 @@ Once connected to same WiFi, we can connect to the gallery to view and download,
 - Battery - Pisugar S plus.
 - Buttons and fasteners.
 
-With little bit of soldering and 3D modelling, we can assemble all parts together.
+With little bit of soldering and 3D modelling, assembling all parts together.
 
 Used Fusion-360 to give a simple design. Here: [STL files](https://github.com/perseus784/diy-pi-camera/tree/main/data/3D%20files).
 
-<img src="data/images/3D_slicer.png?raw=true" alt="3D Slicer" width="750"/>
+<img src="data/images/3D_slicer.png?raw=true" alt="3D Slicer" width="800"/>
 
 <table>
     <tr>
